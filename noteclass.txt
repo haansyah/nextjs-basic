@@ -1,0 +1,4 @@
+open cmd :
+npx create-next-app basic-nextjs --typescript
+
+npx next dev
