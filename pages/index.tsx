@@ -1,11 +1,14 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
+import Layout from '../components/Layout'
 import styles from '../styles/Home.module.css'
+import Image from 'next/image'
 
 const Home: NextPage = () => {
   return (
-    <h1>Welcome Ari Sutarman</h1>
+    <Layout pageTitle='Home Page'>
+      <Image src='/profile.jpg' height={200} width={200} alt="Image 1"/>
+      <h1 className={styles['title-homepage']}>Welcome Ari Sutarman</h1>
+    </Layout>
   )
 }
 
